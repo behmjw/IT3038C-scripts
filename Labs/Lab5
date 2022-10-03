@@ -1,0 +1,20 @@
+import random
+correctAnswer = random.randint(1,10)
+print('Guess a number 1 - 10')
+userGuess = int(input())
+while userGuess != correctAnswer:
+    if userGuess < correctAnswer:
+        print('Your guess was too low, guess again.')
+        userGuess = int(input())
+    elif userGuess > correctAnswer:
+        print('Your guess was too high, guess again.')
+        userGuess = int(input())
+
+print('You guessed it right!')
+
+
+
+
+
+
+
